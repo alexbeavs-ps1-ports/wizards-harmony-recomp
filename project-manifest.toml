@@ -1,0 +1,61 @@
+[project]
+title = "Wizard's Harmony"
+region = "Japan"
+revision = "serial-bound source; retail revision not separately labeled"
+track = "recompilation"
+intended_audience = "player"
+commercial_use_possible = false
+representative_level = "census scaffold build exit 0 on pin-j-v0.1.8; startup and gameplay not claimed"
+
+[retail_identity]
+disc_count = 1
+serials = ["SLPS-00194"]
+executable_paths = ["disc/SLPS_001.94"]
+executable_sha256 = "9376885afdbaf8bd1b380b6af31fc029a248caa91487efa2233f1d7738b00b79"
+exe_name = "wizards_harmony"
+load_address = "0x80138000"
+entry_point = "0x80139D18"
+
+[framework]
+name = "PSXRecomp"
+repository = "https://github.com/Alexbeav/psxrecomp.git"
+commit = "6e8cf2ac631740db6bff1ee310f07cfa453fecfb"
+tree = "a9f71c725f3e037fb36a57d8e4a9d7e9de0c2df5"
+recomp_ui_commit = "1f79bfeaa6d4cf6aaa7d55ce9a54dea36fb98f35"
+license = "See the pinned dependency license; this binding does not approve commercial use."
+
+[release_binding]
+source_commit = ""
+current_title_version = "0.1.0"
+current_public_topology = "owned-input-kit-only"
+current_public_release = "none"
+current_package_platform = "none-promoted"
+manual_test = "pending-new-exact-package"
+linux_qualification = "pending-exact-package-and-native-test"
+macos_qualification = "testing-waived-by-alex-2026-09-14; packaging-gates-still-apply"
+publication = "preparatory; public publication is a separate approval"
+retcomm_submission = "not-authorized"
+
+[limits]
+maximum_local_generated_gib = 20
+maximum_single_trace_gib = 8
+
+[paths]
+local_context = ".local-context"
+generated = "generated"
+captures = "out/captures"
+traces = "out/traces"
+packages = "dist"
+
+[release]
+version = "0.1.0"
+platform = "multi-platform"
+supported_platforms = ["windows-x64", "linux-x64", "macos-arm64", "macos-x64"]
+graduation_state = "bootstrap_verified"
+public_package_status = "not-published"
+
+[bios]
+required = true
+profile = "SCPH5500"
+size = 524288
+sha256 = "9c0421858e217805f4abe18698afea8d5aa36ff0727eb8484944e00eb5e7eadb"

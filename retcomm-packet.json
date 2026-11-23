@@ -1,0 +1,98 @@
+{
+  "format_version": 1,
+  "id": "wizards-harmony-psx",
+  "name": "Wizard's Harmony",
+  "kind": "recomp",
+  "platform": "psx",
+  "source_repo": "wizards-harmony-recomp",
+  "rom_identity": {
+    "crc32": [
+      "72760c48"
+    ],
+    "md5": [
+      "a27d8bafb9d7c30d828e62efc5090d0a"
+    ],
+    "sha1": [
+      "dc15e7d785e73671f09e2c3645eef76ef966cb5f"
+    ],
+    "disc_serials": [
+      "SLPS-00194"
+    ],
+    "sizes": [
+      417197760
+    ],
+    "filenames": [
+      "Wizard's Harmony (Japan).cue",
+      "Wizard's Harmony (Japan) (Track 1).bin"
+    ],
+    "track_counts": [
+      5
+    ],
+    "disc_fps": [
+      "de73149f9091abb5198cb3e5081f8f3682e6d31760b0821acc1d2473dd301978"
+    ],
+    "require_cue": true
+  },
+  "rom_extensions": [
+    ".cue",
+    ".bin",
+    ".chd"
+  ],
+  "bios_identity": {
+    "required": true,
+    "name": "SCPH5500.BIN",
+    "profile": "SCPH5500",
+    "crc32": [
+      "ff3eeb8c"
+    ],
+    "md5": [
+      "8dd7d5296a650fac7319bce665a6a53c"
+    ],
+    "sha1": [
+      "b05def971d8ec59f346f2d9ac21fb742e3eb6917"
+    ],
+    "sha256": [
+      "9c0421858e217805f4abe18698afea8d5aa36ff0727eb8484944e00eb5e7eadb"
+    ],
+    "sizes": [
+      524288
+    ],
+    "filenames": [
+      "SCPH5500.BIN"
+    ]
+  },
+  "release": {
+    "github": "alexbeavs-ps1-ports/wizards-harmony-recomp",
+    "allow_prerelease": false,
+    "asset_glob": {
+      "windows-x64": "wizards-harmony-*-windows-x64.zip",
+      "linux-x64": "wizards-harmony-*-linux-x64.zip",
+      "macos-arm64": "wizards-harmony-*-macos-arm64.zip",
+      "macos-x64": "wizards-harmony-*-macos-x64.zip"
+    }
+  },
+  "launch": {
+    "windows": "wizards_harmony.exe",
+    "linux": "wizards_harmony",
+    "macos": "wizards_harmony"
+  },
+  "build": {
+    "source": {
+      "github": "alexbeavs-ps1-ports/wizards-harmony-recomp",
+      "ref": ""
+    },
+    "toolchain": {
+      "id": "cmake-clang-v1",
+      "min_version": "1.0.14"
+    },
+    "generate": {
+      "engine": "psxrecomp",
+      "config": "game.toml"
+    },
+    "cmake": {
+      "build_dir": "build",
+      "target": "psx-runtime",
+      "config": "Release"
+    }
+  }
+}

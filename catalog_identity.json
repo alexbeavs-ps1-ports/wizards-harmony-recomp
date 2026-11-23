@@ -1,0 +1,46 @@
+{
+  "format_version": 1,
+  "game": {
+    "name": "Wizard's Harmony",
+    "id": "SLPS-00194",
+    "boot_exe": "SLPS_001.94"
+  },
+  "marketing": {
+    "description": "",
+    "publisher": "",
+    "year": "",
+    "region": "Japan",
+    "players": 1
+  },
+  "rom_identity": {
+    "cue_name": "Wizard's Harmony (Japan).cue",
+    "bin_name": "Wizard's Harmony (Japan) (Track 1).bin",
+    "track_counts": [
+      5
+    ],
+    "require_cue": true,
+    "data_track": {
+      "size": 417197760,
+      "md5": "a27d8bafb9d7c30d828e62efc5090d0a",
+      "sha1": "dc15e7d785e73671f09e2c3645eef76ef966cb5f",
+      "crc32": "72760c48"
+    },
+    "disc_fp": "de73149f9091abb5198cb3e5081f8f3682e6d31760b0821acc1d2473dd301978"
+  },
+  "exe": {
+    "load_address": "0x80138000",
+    "entry_pc": "0x80139D18",
+    "text_size": "0x00053800",
+    "stack_base": "0x801FFFF0"
+  },
+  "seeds": {
+    "count": 724,
+    "source": "boot_exe_jal"
+  },
+  "warnings": [],
+  "notes": [
+    "entry_pc/load_address/text_size/stack_base taken from PS-X EXE header.",
+    "seeds are first-pass boot-EXE JAL targets (+ entry); expect to grow as overlays / runtime paths are discovered.",
+    "required_disc_fp is psxrecomp-toc-v1 (matches runtime DiscIdentity)."
+  ]
+}
